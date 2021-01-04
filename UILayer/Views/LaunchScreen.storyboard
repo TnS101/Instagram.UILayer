@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_LoadingScreen" translatesAutoresizingMaskIntoConstraints="NO" id="vys-uk-JME">
+                                <rect key="frame" x="32" y="221" width="326" height="366"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKZ-Fh-DjC">
+                                <rect key="frame" x="16" y="595" width="358" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="QSH-vs-K3p"/>
+                                    <constraint firstAttribute="width" constant="358" id="tuX-m6-K7m"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Instagram">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="40" name="Zapfino"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="AKZ-Fh-DjC" secondAttribute="bottom" constant="67" id="7tx-vU-weY"/>
+                            <constraint firstItem="vys-uk-JME" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="177" id="As8-19-ROg"/>
+                            <constraint firstAttribute="trailing" secondItem="vys-uk-JME" secondAttribute="trailing" constant="32" id="SPn-tK-bHe"/>
+                            <constraint firstItem="AKZ-Fh-DjC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="16" id="ZDR-BG-C2b"/>
+                            <constraint firstAttribute="trailing" secondItem="AKZ-Fh-DjC" secondAttribute="trailing" constant="16" id="aNA-a6-Uw5"/>
+                            <constraint firstItem="AKZ-Fh-DjC" firstAttribute="top" secondItem="vys-uk-JME" secondAttribute="bottom" constant="8" id="gzO-gu-Sm9"/>
+                            <constraint firstItem="vys-uk-JME" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="32" id="z3F-D9-2qx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.307692307692307" y="374.64454976303318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo_LoadingScreen" width="480" height="480"/>
+    </resources>
+</document>
